@@ -42,17 +42,12 @@ stuff "roscore\n"
 stuff ""
 
 screen -t "FC"
-stuff "cd $(rospack find pidrone_pkg)/scripts/\n"
+stuff "cd $(rospack find simple_pidrone)/scripts/\n"
 stuff "python flight_controller_node.py" # We require this be started manually
 
 screen -t "rosbridge"
 stuff "roslaunch --wait rosbridge_server rosbridge_websocket.launch\n"
 
-screen -t "web_vid_serv"
-stuff "rosrun web_video_server web_video_server"
 
 screen -t "free1"
-stuff "cd $(rospack find pidrone_pkg)/scripts/\n"
-
-screen -t "free2"
-stuff "cd $(rospack find pidrone_pkg)/scripts/\n"
+stuff ""
