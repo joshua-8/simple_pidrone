@@ -10,6 +10,7 @@ import numpy as np
 
 import tf
 
+import command_values as cmds
 from sensor_msgs.msg import Imu
 from h2rMultiWii import MultiWii
 from serial import SerialException
