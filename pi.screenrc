@@ -42,7 +42,6 @@ stuff "roscore\n"
 stuff ""
 
 screen -t "FC"
-stuff "cd $(rospack find simple_pidrone)/scripts/\n"
 stuff "python flight_controller_node.py" # We require this be started manually
 
 screen -t "rosbridge"
