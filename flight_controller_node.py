@@ -233,7 +233,7 @@ class FlightController(object):
         """ Send commands to the flight controller board """
         self.board.sendCMD(8, MultiWii.SET_RAW_RC, self.command)
         self.board.receiveDataPacket()
-        print('command sent:', self.command)
+        # print('command sent:', self.command)
 
         if (self.command != self.last_command):
             print('command sent:', self.command)
