@@ -86,7 +86,7 @@ class FlightController(object):
     def new_fly_command_callback_twist(self, msg):
         if self.curr_mode == 'FLYING':
             self.command = [
-                1500+500*msg.linear.x, 1500+500 * msg.linear.y, 1500+500*msg.angular.x, 1000+900*msg.linear.z]
+                1500+500*msg.linear.x, 1500+500 * msg.linear.y, 1500+500*msg.angular.z, 1000+900*msg.linear.z]
 
     # def fly_commands_callback(self, msg):
     #     """ Store and send the flight commands if the current mode is FLYING """
